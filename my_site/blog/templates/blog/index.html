@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% load static %}
+   
+        {% block title %} 
+        MY BLOG
+        {% endblock  %}
+        
+        
+        {% block css_file%} 
+        <link rel="stylesheet" href="{% static 'blog/post.css'%}">
+        <link rel="stylesheet" href="{% static "blog/index.css"%}">
+        {% endblock %}
+   
+       {% block content %}
+   
+
+    <section id="welcome">
+        <header>
+            <img src="{% static "blog/images/miki.jpeg"%}" alt="Vikas - The author of this blog"/>
+            <h2>VIKAS KARBAIL BLOG</h2>
+        </header>
+    <P>Hi, I am Vikas and I love to blog about Travelling and the world!</p>
+    </section>
+
+    <section id="latest-posts">
+        <h2>My Latest Thought</h2>
+
+    <ul>
+         {% for post in posts %}
+             {% include "blog/includes/post.html" %}
+      {% endfor %}
+    </ul>
+    </section>
+    <section id="about">
+        <h2>What i do</h2>
+        <p>I love programing, i love to help others and I exploring new technologiesin general</p>
+        <p>
+            My goal is to becoming a python developer
+        </p>
+    </section>
+
+{% endblock  %}
+        
+  
