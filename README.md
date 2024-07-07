@@ -15,3 +15,5 @@ $ python manage.py migrate
 
 then it create a local server where you can see the result..
 
+
+[![Watch the video](https://img.youtube.com/vi/YOUR_VIDEO_ID/0.jpg)](https://drive.google.com/file/d/1DMy6DRJ8B30sUfSXIvUn2l0AqwF-Ythb/view?usp=sharing)
